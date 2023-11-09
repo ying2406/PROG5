@@ -1,0 +1,27 @@
+@use 'components';
+@use 'colors';
+
+.social--footer {
+  @extend %section;
+  height: 10rem;
+}
+
+.social-icons {
+  display: flex; /* Display the icons in a row */
+  list-style: none; /* Remove the default list styles */
+  padding: 0; /* Remove any default padding */
+  justify-content: center; /* Adjust the alignment as needed */
+}
+
+.social-icons li {
+  margin-right: 2rem; /* Adjust the margin for spacing between icons */
+}
+
+.social-icons a {
+  color: red;
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.social-icons a:hover {
+  color: colors.$pink;
+}
